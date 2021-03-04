@@ -1,4 +1,4 @@
-#testing script
+#testing script for classification
 
 from python_speech_features import mfcc
 import scipy.io.wavfile as wav
