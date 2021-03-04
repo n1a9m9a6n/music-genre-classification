@@ -88,12 +88,12 @@ trainingSet = []
 testSet = []
 loadDataset("my.dat" , 0.66, trainingSet, testSet)
 
-#making predictions using KNN getting accuracy aroung 69%
+#making predictions using KNN getting accuracy around 69%
 leng = len(testSet)
 predictions = []
 for x in range (leng):
     predictions.append(nearestClass(getNeighbors(trainingSet ,testSet[x] , 5))) 
 
-accuracy1 = getAccuracy(testSet , predictions)
+accuraacy1 = getAccuracy(testSet , predictions)
 print(accuracy1)
 
